@@ -9,7 +9,7 @@ function showWish() {
     setTimeout(function() {
         console.log("Redirecting to link");
         window.location.href = 'https://youtube.com/shorts/ePjLGie443U?si=PnbZAR_JUtFlqngc';
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 2000); // 5000 milliseconds = 5 seconds
 }
 
 function closePopup() {
