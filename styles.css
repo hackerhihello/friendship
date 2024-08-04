@@ -150,3 +150,16 @@ body {
     height: 100%;
     border: 0;
 }
+
+.glowing-heart {
+    width: 100px;
+    height: 100px;
+    background: url('https://cdn.iconscout.com/icon/free/png-512/free-heart-56-76703.png?f=webp&w=256') no-repeat center/cover;
+    margin: 0 auto 20px;
+    animation: heartbeatPopup 1.5s infinite;
+}
+
+@keyframes heartbeatPopup {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px red); }
+    50% { transform: scale(1.1); filter: drop-shadow(0 0 25px red); }
+}
