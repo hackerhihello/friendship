@@ -8,6 +8,7 @@ function showWish() {
 }
 
 function closePopup() {
+    // console.log("closePopup function called");
     document.getElementById('popup').style.display = 'none';
     document.getElementById('videoFrame').src = ''; // Stop the video when the popup is closed
 }
