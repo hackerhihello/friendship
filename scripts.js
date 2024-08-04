@@ -4,17 +4,13 @@ console.log("Script loaded");
 function showWish() {
     console.log("showWish function called");
     document.getElementById('popup').style.display = 'block';
-
-    // Set timeout to redirect after 5 seconds (for demonstration, originally requested 5 minutes)
-    setTimeout(function() {
-        console.log("Redirecting to link");
-        window.location.href = 'https://youtube.com/shorts/ePjLGie443U?si=PnbZAR_JUtFlqngc';
-    }, 5000); // 5000 milliseconds = 5 seconds
+    document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/ePjLGie443U';
 }
 
 function closePopup() {
     console.log("closePopup function called");
     document.getElementById('popup').style.display = 'none';
+    document.getElementById('videoFrame').src = ''; // Stop the video when the popup is closed
 }
 
 // Ensure the script is correctly attaching the event listener
